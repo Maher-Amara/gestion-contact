@@ -2,34 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accueil"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imag2"
     android:orientation="vertical"
-    tools:context=".Edition" >
+    tools:context=".Accueil">
 
     <TextView
-        style="@style/st_titre1"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contacts" />
+        android:text="Accueil"
+        android:textAlignment="center"
+        android:textColor="#091E95"
+        android:textSize="30sp" />
 
-    <TextView
+    <Button
+        android:id="@+id/btm_ajout_acc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recherche"
-        android:textStyle="bold|italic" />
+        android:text="Ajout" />
 
-    <EditText
-        android:id="@+id/ed_rech_edi"
+    <Button
+        android:id="@+id/btm_affiche_acc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Taper ici pour la recherche"
-        android:inputType="textPersonName" />
-
-    <ListView
-        android:id="@+id/lv_aff_edi"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:text="Afficher" />
 </LinearLayout>

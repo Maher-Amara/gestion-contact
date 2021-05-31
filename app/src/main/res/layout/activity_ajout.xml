@@ -2,122 +2,112 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ajout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imag2"
     android:orientation="vertical"
     tools:context=".Ajout">
 
     <TextView
-        style="@style/st_titre1"
+        android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ajout" />
+        android:text="Ajout"
+        android:textAlignment="center"
+        android:textColor="#0922AE"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <TextView
-            style="@style/txt_view_style"
+            android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Nom" />
+            android:text="Nom :"
+            android:textColor="#071FA8"
+            android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/ed_nom_ajt"
-            android:layout_width="wrap_content"
+            android:id="@+id/ed_name_mod"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
-            android:hint="saisir nom"
-            android:inputType="textPersonName" />
-
+            android:hint="name"
+            android:inputType="textPersonName"
+            android:textColor="#172FB5" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
 
         <TextView
-            style="@style/txt_view_style"
+            android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Prénom" />
+            android:text="Prenom :"
+            android:textColor="#0C229A"
+            android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/ed_pre_ajt"
+            android:id="@+id/ed_prenom_mod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="saisir prénom"
-            android:inputType="textPersonName" />
-
+            android:hint="prenom"
+            android:inputType="textPersonName"
+            android:textColor="#051880"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
 
         <TextView
-            style="@style/txt_view_style"
+            android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Numero" />
+            android:text="Numero :"
+            android:textColor="#081B85"
+            android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/num_num_ajt"
+            android:id="@+id/ed_numero_mod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="saisir numero"
-            android:inputType="number" />
-
+            android:hint="numero"
+            android:inputType="textPersonName"
+            android:textColor="#061B8E"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_qte_ajt"
+            android:id="@+id/btm_quitter_mod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:text="Quitter" />
 
         <Button
-            android:id="@+id/btn_val_ajt"
+            android:id="@+id/btm_valider_mod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:text="Valider" />
     </LinearLayout>
-
 </LinearLayout>
